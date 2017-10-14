@@ -10,6 +10,7 @@
                  [weasel                    "0.7.0"      :scope "test"]
                  [org.clojure/clojurescript "1.9.562"]
                  [crisptrutski/boot-cljs-test "0.3.0" :scope "test"]
+                 [garden "1.3.2"]                 
                  [reagent "0.6.0"]])
 
 (require
@@ -55,7 +56,6 @@
   []
   (comp (development)
         (run)))
-
 
 (deftask testing []
   (set-env! :source-paths #(conj % "test/cljs"))
